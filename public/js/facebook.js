@@ -19,7 +19,6 @@ function statusChangeCallback(response) {
 }
 
 function changeUser(response){
-  var humongo = document.getElementByClassName("facebookLogin");
   $('p.facebookLogin').hide();  
   $('#name').text(response.name);
   $('#photo').attr("scr", response.picture.data.url);
